@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-var arrayOfColors = ["#cd6155", "#af7ac5", "#5499c7", "#48c9b0", "#58d68d", "#f5b041", "#dc7633", "#EAECEE",
+const arrayOfColors = ["#cd6155", "#af7ac5", "#5499c7", "#48c9b0", "#58d68d", "#f5b041", "#dc7633", "#EAECEE",
                      "#c0392b", "#9b59b6", "#2980b9", "#1abc9c", "#2ecc71", "#f39c12", "#d35400", "#D5D8DC",
                      "#a93226", "#884ea0", "#2471a3", "#17a589", "#28b463", "#d68910", "#ba4a00", "#ABB2B9",
                      "#922b21", "#76448a", "#1f618d", "#148f77", "#239b56", "#b9770e", "#a04000", "#808B96",
@@ -10,22 +10,22 @@ var arrayOfColors = ["#cd6155", "#af7ac5", "#5499c7", "#48c9b0", "#58d68d", "#f5
                      "#641e16", "#512e5f", "#154360", "#0e6251", "#186a3b", "#7e5109", "#6e2c00", "#2C3E50"];
 var color = null;
 var backgroundColor;
-//var boardColor;
 
 class Square extends React.Component {
     constructor(props){
         super(props);
-        this.state = {value: null,  boardColor: null,};
+        this.state = {boardColor: null,};
     }
+
     handleClick(){
-      //var x = this.props.value;
-      //var myStyle = {background: "pink"};
-      this.setState({value: color, });
-      //document.getElementsByName(this.props.value).style.stylefontSize = "larger";
+      const boardColor = arrayOfColors[color]; 
+      this.setState({boardColor});
     }
+    
     render() {
+      const {boardColor} = this.state;
       return (
-        <button  className="square"  onClick={() => this.handleClick()}>
+        <button  className="square" style={{background: boardColor}}  onClick={() => this.handleClick()}>
           {this.state.value}
         </button>
       );
