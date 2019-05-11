@@ -101,7 +101,7 @@ class ColorSquare extends React.Component {
         super(props);
         this.state = {value: null,
         };
-        var myStyle = {background: "pink"};
+        let myStyle = {background: "pink"};
         myStyle.background  = arrayOfColors[this.props.value];
         backgroundColor = myStyle;
     }
@@ -192,8 +192,13 @@ class Colors extends React.Component {
   
 class Display extends React.Component {
     render() {
+      const title = "PIXEE";
       return (
-        <div className="game">
+        <div className="container">
+          <div className="header">
+            <h1>{title}</h1>
+          </div>
+
           <div className="game-board">
             <Board />
             <Colors />
