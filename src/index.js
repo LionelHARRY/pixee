@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Grid from '@material-ui/core/Grid';
 
 const arrayOfColors = ["#cd6155", "#af7ac5", "#5499c7", "#48c9b0", "#58d68d", "#f5b041", "#dc7633", "#EAECEE",
                      "#c0392b", "#9b59b6", "#2980b9", "#1abc9c", "#2ecc71", "#f39c12", "#d35400", "#D5D8DC",
@@ -198,11 +199,14 @@ class Display extends React.Component {
           <div className="header">
             <h1>{title}</h1>
           </div>
-
-          <div className="game-board">
-            <Board />
-            <Colors />
-          </div>
+          <Grid container>
+            <Grid item>
+              <Colors />
+            </Grid>
+            <Grid item>
+              <Board />
+            </Grid>
+          </Grid>
           <div className="game-info">
             <div>{/* status */}</div>
             <ol>{/* TODO */}</ol>
