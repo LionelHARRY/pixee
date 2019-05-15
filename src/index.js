@@ -128,63 +128,50 @@ class Colors extends React.Component {
           <div className="status">{status}</div>
           <div className="board-row">
             {this.renderColor(0)}
-            {this.renderColor(1)}
-            {this.renderColor(2)}
-            {this.renderColor(3)}
-            {this.renderColor(4)}
-            {this.renderColor(5)}
-            {this.renderColor(6)}
-            {this.renderColor(7)}
-          </div>
-          <div className="board-row">
             {this.renderColor(8)}
-            {this.renderColor(9)}
-            {this.renderColor(10)}
-            {this.renderColor(11)}
-            {this.renderColor(12)}
-            {this.renderColor(13)}
-            {this.renderColor(14)}
-            {this.renderColor(15)}
-          </div>
-          <div className="board-row">
             {this.renderColor(16)}
-            {this.renderColor(17)}
-            {this.renderColor(18)}
-            {this.renderColor(19)}
-            {this.renderColor(20)}
-            {this.renderColor(21)}
-            {this.renderColor(22)}
-            {this.renderColor(23)}
-          </div>
-          <div className="board-row">
             {this.renderColor(24)}
+          </div><div className="board-row">
+            {this.renderColor(1)}
+            {this.renderColor(9)}
+            {this.renderColor(17)}
             {this.renderColor(25)}
+          </div>
+          <div className="board-row">
+            {this.renderColor(2)}
+            {this.renderColor(10)}
+            {this.renderColor(18)}
             {this.renderColor(26)}
+          </div>
+          <div className="board-row">
+            {this.renderColor(3)}
+            {this.renderColor(11)}
+            {this.renderColor(19)}
             {this.renderColor(27)}
+          </div>
+          <div className="board-row">
+            {this.renderColor(4)}
+            {this.renderColor(12)}
+            {this.renderColor(20)}
             {this.renderColor(28)}
+          </div>
+          <div className="board-row">
+            {this.renderColor(5)}
+            {this.renderColor(13)}
+            {this.renderColor(21)}
             {this.renderColor(29)}
+          </div>
+          <div className="board-row">
+            {this.renderColor(6)}
+            {this.renderColor(14)}
+            {this.renderColor(22)}
             {this.renderColor(30)}
+          </div>
+          <div className="board-row">
+            {this.renderColor(7)}
+            {this.renderColor(15)}
+            {this.renderColor(23)}
             {this.renderColor(31)}
-          </div>
-          <div className="board-row">
-            {this.renderColor(32)}
-            {this.renderColor(33)}
-            {this.renderColor(34)}
-            {this.renderColor(35)}
-            {this.renderColor(36)}
-            {this.renderColor(37)}
-            {this.renderColor(38)}
-            {this.renderColor(39)}
-          </div>
-          <div className="board-row">
-            {this.renderColor(40)}
-            {this.renderColor(41)}
-            {this.renderColor(42)}
-            {this.renderColor(43)}
-            {this.renderColor(44)}
-            {this.renderColor(45)}
-            {this.renderColor(46)}
-            {this.renderColor(47)}
           </div>
         </div>
       );
